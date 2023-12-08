@@ -1,0 +1,20 @@
+// a=10 b=20
+// a=20 b=10
+
+import java.util.Scanner;
+
+class main{
+    public static void main(String[] args)
+    {
+        int a,b ;
+        System.out.println("enter any two number ");
+        Scanner ref=new Scanner(System.in);
+        a= ref.nextInt(); // a=100 suppose 
+        b= ref.nextInt(); // b=200 suppose 
+        System.out.println("Before swapping "+a+" "+b);
+        a=a+b;
+        b=a-b;
+        a=a-b;
+        System.out.println("after swapping "+a+" "+b);
+    }
+}
